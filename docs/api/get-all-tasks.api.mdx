@@ -1,0 +1,63 @@
+---
+id: get-all-tasks
+title: "Get all tasks"
+description: "Retrieve a list of all tasks"
+sidebar_label: "Get all tasks"
+hide_title: true
+hide_table_of_contents: true
+api: eJylVWFv0zAQ/SvWfU6XtOsG5BMToGkIEGKbJjH1w9W5NmaO7dmXwlT1v6NLspGWSYCoKjVyzu/evXt33QLjOkF5C4zpLsEig4qSjiaw8Q5K+EIcDW1IobImsfIrhdaqPjoDHyiihF5UUMKa+Mzaq+FdpBS8S5Sg3MKsKORnH/zDgNihqTikqlRqtaaUVq21D5CB9o7JsdzHEKzRXcb8WxKQLSRdU4PyxA+BoASMEeWeYWrS6Nwvv5FmyCBE4c2mp2aqUUziaNwaDmW4dua+JWUqcmxWhqJa+ai4po47ZEA/sAlWEKazY5qfnL6Y0MtXy8l0Vh1PcH5yOpnPTk+n8+mLeVEUsMuADUv8nzKLmqqPHWd54+WBSYXopSpVed025LjTRvD3YP4qy/honOsmGialfRMi1eSS2dB+uj0xkjr7fCEE9EBxLO/Se0vofst/UxPX9AtEmaR+3R+RWaFNJOCRkKk64+dqW/nYIEMJFTJN2DT0fMEdiPCXkMTYhL26Z8XseDKdTYrp1bQoC/l+lcLaUP1/bouJVY/0T+l3Mlj3rYmi662Y99FKY8XHAo0JL55817GAnXwyOHluOi8cU3RoVaK4oagoRh87Ag1x7YeBl3FCrqGE/HEp9PGyVbbQRgsl1MyhzHPrNdraJy6PZQgOdXlLG7I+iK2GnLBbZGDcyndKj4j3JjsEuDRSv/ry7vJK3ne2bNDh2rh1782cfeWTWrbGsvpuuFafKPH7S7WK2NB3H2WWhXwPOD0qjophA6Hu+u2wERICf9mG4KMoQA0aqTP1J6+HJh5p34hhrNHkEo2uf7y4kr48iZPKPPeBXPJt1HTk4zofLqVcYkX14BM36EYo58R72/hg5J/25p+2+OBhph+cB4um2x8due3Q3NH/g/RPDrbbJSa6jna3k+P7luIDlLeLDDYYDS6lV7eLXQY1YUWxc8MdPYh2WlMQ2TZo225hH251afuTyc7fSf0/AeN7Qkw=
+sidebar_class_name: "get api-method"
+info_path: docs/api/tasks-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get all tasks"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/tasks"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve a list of all tasks
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"List of tasks retrieved successfully","content":{"application/json":{"schema":{"type":"array","items":{"type":"object","properties":{"id":{"type":"string","description":"Unique identifier for the task","example":"123e4567-e89b-12d3-a456-426614174000"},"title":{"type":"string","description":"Task title","example":"Complete project documentation"},"description":{"type":"string","description":"Task description","example":"Write comprehensive documentation for the tasks API"},"completed":{"type":"boolean","description":"Whether the task is completed","example":false},"createdAt":{"type":"string","format":"date-time","description":"Task creation timestamp","example":"2023-12-01T10:00:00Z"},"updatedAt":{"type":"string","format":"date-time","description":"Task last update timestamp","example":"2023-12-01T10:00:00Z"}},"required":["id","title","completed","createdAt","updatedAt"],"title":"Task"}}}}},"500":{"description":"Internal server error"}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,71 @@
+---
+id: delete-task
+title: "Delete task by ID"
+description: "Delete a specific task by its ID"
+sidebar_label: "Delete task by ID"
+hide_title: true
+hide_table_of_contents: true
+api: eJyNU8Fu2zAM/RWBpw0QYm/rLjptQHLIsA1Dk52KHBSbjoXKkirSbQPD/z7QdrFsbYedbNN8T0/vkQOwPRGYG2BLtwQHDTVSlV1iFwMYWKNHRmUVJaxc4yoljep4Vo5JbdegISbMVtq3NRioJ8De0i1oSDbbDhmzHDFAsB2CAVeDBifsyXILGjLe9S5jDYZzjxqoarGzYAbgcxIEcXbhBOPf6uQYETEehIRSDIQkuPdlKY8Xumd9taK+qpCo6b0/C/FVefUKIkRWTexDLW0fXyLeBsYcrFeE+R6zwpxjhnHU0CG38bctkyXcgoFi8rsYXD2Chhk3m9RnDwZa5mSKwsfK+jYSmw9lWcLzdO7Rx9Rh4OXsyQoXmji559jjcg1Sn39snxHsXJc8quvNbi//VROz6mywJxdOapbIsY6kjr3zrB4ct+o7En/ZqUaifYhZchbxM+G7VbkSnVUMbCsWFUvqQr/rU4qZQQN21sk9aa58wkcrSlZV7MRm7yoMhBfwb9s96AtzyBRFTBgo9rnCVcynYgFRIb3iforEnQ0XLMs4P83wNL9/ODJMyjHw/83+Mp+Mj1wkb10Q8ZPIYUn6abM0GFfLfkmaUh6GoyX8mf04Svmux3wGc3PQcG+zs0dJ7maA2pG812Aa6wn/IffN9bJGb9XTXrwicCnacJbsrO/lCzTc4nlez/FwObvrzdfNfgPj+AvyR2h3
+sidebar_class_name: "delete api-method"
+info_path: docs/api/tasks-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Delete task by ID"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"delete"}
+  path={"/tasks/{id}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Delete a specific task by its ID
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"id","in":"path","required":true,"schema":{"type":"string"},"description":"Task ID"}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Task deleted successfully"},"404":{"description":"Task not found"},"500":{"description":"Internal server error"}}}
+>
+  
+</StatusCodes>
+
+
+      

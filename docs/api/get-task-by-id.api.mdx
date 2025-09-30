@@ -1,0 +1,71 @@
+---
+id: get-task-by-id
+title: "Get task by ID"
+description: "Retrieve a specific task by its ID"
+sidebar_label: "Get task by ID"
+hide_title: true
+hide_table_of_contents: true
+api: eJylVW1v2zYQ/ivEfdoAOZIdJ930aekLChfYMCQpCizwB5o8WWwkkiFPbg1B/704SXEUO906FDBgieLd89xzby2Q3EbI74BkvI+wTkBjVMF4Ms5CDtdIweAOhRTRozKFUYKvis1eGIpi9RYScB6DZIOVhhy2SLcy3r/erzQk4GWQNRIGRmnByhohB8OfDAN4SSUkEPChMQE15BQaTCCqEmsJeQu092wRKRi7he6YIEMxi27NTqJ3NmJku0WW8d8Lt8MYkxaxUQpjLJqq2kMCyllCS2wmva+M6oNKP0e2bU85uc1nVMRBBpaAzIBs9CnvY9ofrXloUBiNlkxhMIjCBUEl9upCAvhV1r5iD/PFOS4vLl/N8LffN7P5Qp/P5PLicrZcXF7Ol/NXyyzLWBcyxPf/C7mXYLg7RXnj+IFQ+OA4KqGdamq01GtwovsPoUyPplifgiEUytU+YIk2mh0+h3smRhRXf6+YgBopTuXdOFehtCf4n0qkEp+cCBPFk/2ETCGriOw8oCTUV/RSbIULtSTIQUvCGZkaXw64d8L8+UokWftncS+yxflsvphl89t5lmf8+4cDa7z+eexKRhKDp/8F302b727ozMfymCr2JNCU8PpQdz0L6Dp2uMyW3+k960gUrrGa4754qUVXljBYWYmIYYdBYAgu9DRrpNKNE6afLFRCDmlfI2lrdAcJDEbDrGlCBTmURD5P08opWZUuUn7O/XIs4VvcYeU8V+AI3E8UYwvXJ2US41CPxw5uDEslrt/d3PL3voJraeXW2O1Qxik57aLYNKYi8cVQKf7CSB9uRMET8osL3PZMfnA4P8vOsnEoSdWXxjg82f1N470LLAPW0nCccTj5Y8z3mXI1a1wZhTbixPzP1S2n8CBOzNPUebTRNUHhmQvbdDSKKd9l6b2LVEs78fIe6bAI+iVwNB4Os/THVshY9YRfKfWVNP3E6Tm2Y6IfV1QCudFcd5xMPm7bjYz4MVRdx8cPDYY95HfrBHYyGLnhxN21oE3kZz22/L8Q/uV67IdfxeN2+Q7B8VBa3h47WTX8Bgnc435Yct26S6BEqTH0JIYPV0qhp4nJybbh2juU+/t3nIRvb/yVzg==
+sidebar_class_name: "get api-method"
+info_path: docs/api/tasks-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get task by ID"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/tasks/{id}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve a specific task by its ID
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"id","in":"path","required":true,"schema":{"type":"string"},"description":"Task ID"}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Task retrieved successfully","content":{"application/json":{"schema":{"type":"object","properties":{"id":{"type":"string","description":"Unique identifier for the task","example":"123e4567-e89b-12d3-a456-426614174000"},"title":{"type":"string","description":"Task title","example":"Complete project documentation"},"description":{"type":"string","description":"Task description","example":"Write comprehensive documentation for the tasks API"},"completed":{"type":"boolean","description":"Whether the task is completed","example":false},"createdAt":{"type":"string","format":"date-time","description":"Task creation timestamp","example":"2023-12-01T10:00:00Z"},"updatedAt":{"type":"string","format":"date-time","description":"Task last update timestamp","example":"2023-12-01T10:00:00Z"}},"required":["id","title","completed","createdAt","updatedAt"],"title":"Task"}}}},"404":{"description":"Task not found"},"500":{"description":"Internal server error"}}}
+>
+  
+</StatusCodes>
+
+
+      

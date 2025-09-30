@@ -1,0 +1,16 @@
+{
+  "extends": "@docusaurus/tsconfig",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "skipLibCheck": true
+  },
+  "include": [
+    "docs/**/*",
+    "docusaurus.config.ts",
+    "sidebars.ts",
+    "src/components/**/*",
+    "src/css/**/*",
+    "src/pages/**/*"
+  ],
+  "exclude": ["src/**/*.ts", "test/**/*", "dist/**/*"]
+}
